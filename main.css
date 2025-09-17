@@ -1,0 +1,425 @@
+body {
+  background-color: #0a1328;
+  overflow: hidden;
+}
+
+
+
+#main {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: row;
+  justify-content: center;
+  /* overflow: hidden; */
+}
+
+#left-part,
+#right-part {
+  /* width: 50%; */
+  padding: 20px;
+  /* Optional: for spacing inside the divs */
+  box-sizing: border-box;
+  /* Ensures padding doesn't exceed width */
+}
+
+#left-part {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: #d31010; */
+  height: 100vh;
+  justify-content: space-between;
+  /* margin-left: 100px; */
+  padding-left: 100px;
+  overflow: hidden;
+
+}
+
+#right-part {
+  width: 55%;
+  /* margin-top: 110px;
+  margin-left: 200px;
+  margin-right: 300px; */
+  padding-top: 110px;
+  padding-left: 150px;
+  padding-right: 250px;
+  color: white;
+  overflow-y: auto;
+  /* Enables vertical scroll only if content overflows */
+
+}
+
+
+#top-left {
+  margin-left: 220px;
+  margin-top: 80px;
+  /* background-color: black; */
+  color: white;
+}
+
+#bottom-left {
+  height: 20px;
+  width: 350px;
+  /* background-color: black; */
+  /* margin: 100px; */
+  top: -59px;
+  left: 204px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  position: relative;
+}
+
+#name {
+  font-size: 3.2rem;
+  margin-bottom: -10px;
+  margin-top: 0px;
+  color: #C4D0EC;
+  font-family: Arial, Helvetica, sans-serif;
+  font: Sans-serif;
+}
+
+#work {
+  color: #C4D0EC;
+}
+
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(75px);
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: -5;
+}
+
+
+#circle1 {
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+  background-color: #1123546f;
+}
+
+#circle2 {
+  height: 500px;
+  width: 500px;
+  border-radius: 400px;
+  background-color: #18307460;
+  filter: blur(150px);
+}
+
+#circle3 {
+  height: 650px;
+  width: 650px;
+  border-radius: 500px;
+  background-color: #172e6e50;
+  filter: blur(250px);
+}
+
+
+
+
+
+.btn-sections {
+  margin-top: 80px;
+}
+
+/* From Uiverse.io by portseif */
+.unique {
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.8;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  padding: 1rem;
+  padding-left: 0;
+}
+
+.unique:before {
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin-right: 10px;
+  transition: all .42s cubic-bezier(.25, .8, .25, 1);
+  width: 0;
+}
+
+.unique:hover:before {
+  background-color: #fff;
+  width: 5rem;
+}
+
+
+
+p {
+  position: relative;
+  font-size: 1.1rem;
+  color: #8296BD;
+  z-index: 10;
+}
+
+
+.titleHeading::after {
+  display: flex;
+  content: '';
+  width: 65%;
+  height: 2px;
+  background-color: #8296BD;
+  position: relative;
+  left: 210px;
+  top: -38px;
+}
+
+#HeadingChange::after {
+  left: 399px;
+    top: -38px;
+    width: 40%;
+}
+
+
+span {
+  font-size: 25px;
+  color: rgb(12, 202, 202);
+}
+
+
+/* my image  */
+button1 {
+  padding: 2em 2.5em;
+  margin: 100px;
+  width: 13em;
+  height: 4.2em;
+  /* background-color: #212121; */
+  border: 0.08em solid #fff;
+  border-radius: 0.3em;
+  font-size: 12px;
+  cursor: pointer;
+  display: contents;
+}
+
+button1 span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 3em;
+  bottom: 0.4em;
+  left: 10em;
+  width: 15em;
+  height: 15em;
+  /* background-color: #212121; */
+  /* background: rgba(12, 202, 202, 0.383); */
+  background-color: rgb(30 55 179 / 55%);
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  color: #fff;
+  border: 0.08em solid #fff;
+  /* box-shadow: 0 0.4em 0.1em 0.019em #fff; */
+  box-shadow: 1em 1em 0.1em 0.019em #8296BD;
+}
+
+button1 span:hover,
+.unique.active {
+  transition: all 0.5s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 black;
+  border: 0.08em solid #fff;
+}
+
+/* button1 span:not(hover) {
+  transition: all 0.2s;
+  top: 0px;
+  left: 0px;
+} */
+
+button1 img {
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+
+
+/* heading my project  */
+#project-section {
+  position: relative;
+  top: 10em;
+  gap: 15px;
+}
+
+.sectProj {
+  /* position: relative; */
+  width: 100%;
+  /* height: 12em; */
+  height: auto;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+#sect-1{
+  gap: 80px;
+}
+#sect-1 .projImg img{
+  position: relative;
+  left: 30px;
+}
+
+.sectProj:hover {
+
+  /* backdrop-filter: blur(20px); */
+  background-color: rgba(255, 255, 255, 0.15);
+  /* color: #ffffff; */
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  opacity: 60%;
+  border: 0.1em solid #8296BD;
+  z-index: -10;
+}
+
+.projImg {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 26px;
+  width: auto;
+  height: 100%;
+}
+
+
+#MyExp {
+  position: relative;
+  top: 12em;
+  /* bottom: 100px; */
+}
+
+
+/* CSS */
+.button-34 {
+  height: 35px;
+  background: #183756;
+  border-radius: 999px;
+  /* box-shadow: #475462 0 10px 20px -10px; */
+  box-sizing: border-box;
+  color: rgb(12, 202, 202);
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 5px 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+#ending {
+  position: relative;
+  top: 20em;
+  bottom: 10em;
+}
+
+#small {
+  color: rgba(255, 255, 255, 0.461);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+
+#resume {
+  top: 4.5em;
+  position: relative;
+  color: white;
+  font-size: 21px;
+}
+
+
+
+
+
+#contact-me {
+  position: relative;
+  top: 15em;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  padding-top: 20px;
+  /* padding: 20px 25px; */
+  border-radius: 10px;
+  /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
+  max-width: 400px;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid white;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  background: none;
+  color: white;
+}
+
+textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+
+#submit-info {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#submit-info:hover {
+  background-color: #0056b3;
+}

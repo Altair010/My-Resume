@@ -1,0 +1,96 @@
+@media screen and (max-width: 768px) {
+    #main {
+        /* display: flex; */
+        display: block;
+        flex-direction: column;
+        width: 100vw;
+        overflow: auto;
+    }
+
+
+    #left-part,
+    #right-part {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    #left-part {
+        justify-content: flex-start;
+        padding-bottom: 300px;
+    }
+    #right-part{
+        position: relative;
+        top: -175px;
+    }
+
+    #top-left {
+        margin: 10px;
+        margin-top: 35px;
+        color: white;
+    }
+
+    #bottom-left {
+        height: 20px;
+        width: auto;
+        /* background-color: black; */
+        margin: 10px;
+        top: auto;
+    }
+
+    .btn-sections {
+        display: none;
+    }
+
+    #bottom-left {
+
+        top: 10px;
+        left: 0px;
+    }
+    button1 span{
+        left: 4em;
+    }
+}
+
+
+
+
+
+
+
+/* for tablet */
+@media screen and (max-width: 1260px) and (min-width:768px) {
+    #left-part {
+        padding-bottom: 500px;
+        padding-left: 51px;
+        top: 135px;
+        left: 0px;
+        margin-top: 100px;
+    }
+
+    #top-left {
+        margin: 10px;
+        margin-top: 15px;
+        color: white;
+    }
+
+
+    button1 span {
+        left: 3em;
+    }
+
+    #right-part {
+        padding-right: 125px;
+        padding-top: 84px;
+        padding-left: 26px;
+    }
+
+    #bottom-left {
+
+        top: 145px;
+        left: 17px;
+    }
+
+}
